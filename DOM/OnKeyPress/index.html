@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="display" style="color: red;"></h1>
+        <input id="text" type="text" placeholder="Type Something..." style="font-size: 25px; padding: 3px; margin-top: 10px;" >
+    </div>
+
+                <!-- javascript -->
+    <script>
+        text = document.querySelector("#text");
+        display = document.querySelector("#display");
+
+        text.addEventListener("keypress",(k)=>{
+            display.innerText = "you have Pressed " + k.key ;
+        });
+
+    </script>       
+</body>
+</html>

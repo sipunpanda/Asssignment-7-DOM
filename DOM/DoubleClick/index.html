@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div {
+        background-color: green;
+        font-size: 25px;
+        width: 18.5vw;
+        border-radius: 8px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div id="btn">
+        <p>
+            Click me twice 👇👇
+        </p>
+    </div>
+    <!-- script  -->
+    <script>
+        const btn = document.querySelector("#btn");
+        btn.addEventListener("dblclick",()=>{
+            alert("doubleClick event is working properly 👍");
+        });
+
+    </script>
+</body>
+
+</html>

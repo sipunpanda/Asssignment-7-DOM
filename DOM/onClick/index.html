@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+                                <!-- css  -->
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        background-color: green;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        width: 18vw;
+        font-size: 25px;
+        border-radius: 7px;
+    }
+
+</style>
+
+                            <!-- body  -->
+<body>
+    <div id="btn">
+        <p>Click Me 👇</p>
+    </div>
+
+                            <!-- javascript  -->
+<!-- <script src="./script.js"></script> -->
+<script>
+    const boxElement = document.querySelector("#btn");
+
+// add a click event listener to the element
+boxElement.addEventListener("click",()=> {
+  alert("you just clicked me 👍");
+});
+</script>
+</body>
+</html>

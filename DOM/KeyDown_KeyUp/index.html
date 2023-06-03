@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="text" style="font-size: 55px;" >Press any key :)</div>
+    </div>
+
+
+
+    <!-- javascript  -->
+    <script>
+        const text = document.getElementById("text");
+        document.addEventListener("keydown",(k)=>{
+            text.innerText = k.key + " is key down";
+            text.style.color ="green";
+        });
+        document.addEventListener("keyup",(k)=>{
+            text.style.color = "red";
+            text.innerText = k.key + " is key Up"
+        });
+        
+    </script>
+</body>
+</html>
